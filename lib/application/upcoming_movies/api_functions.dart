@@ -2,6 +2,8 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:netflix/application/upcoming_movies/upcoming_movies.dart';
 
+
+
 late Upcomming data;
 
 Future<List<UpcommingMovies>> getUpcommingMovies() async {

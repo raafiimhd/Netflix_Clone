@@ -2,15 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:netflix/application/movie_data/api_functions.dart';
 import 'package:netflix/application/movie_data/movie_data.dart';
+import 'package:netflix/application/past_year_movies/api_function.dart';
 import 'package:netflix/application/south_indians/api_functions.dart';
 import 'package:netflix/application/tense_drama/api_functions.dart';
 import 'package:netflix/application/top_rated/api_functions.dart';
 import 'package:netflix/core/colors/colors.dart';
 import 'package:netflix/presentation/main_page/screen_main_page.dart';
-
-import 'application/past_year_movies/api_function.dart';
-
-
 
 List<MovieData> trendingmovies = [];
 
@@ -24,9 +21,9 @@ List southindian = [];
 
 String backgroundimage = '';
 
-void main() async{
+void main() async {
   runApp(const MyApp());
-   trendingmovies = await getMovie();
+  trendingmovies = await getMovie();
   releasedinthepastyear = await getPastYearMovies();
   topratedmovies = await getTopRatedMovies();
   tensedrama = await getTenseDrama();
@@ -42,7 +39,7 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   // This widget is the root of your application.
-    void initState() {
+  void initState() {
     loadMovies();
     super.initState();
   }
@@ -87,20 +84,16 @@ class _MyAppState extends State<MyApp> {
       title: 'Flutter Demo',
       theme: ThemeData(
         scaffoldBackgroundColor: backgroundColor,
-        appBarTheme: const AppBarTheme(
-          backgroundColor: Colors.transparent
-        ),
+        appBarTheme: const AppBarTheme(backgroundColor: Colors.transparent),
         fontFamily: GoogleFonts.montserrat().fontFamily,
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         textTheme: const TextTheme(
           bodyMedium: TextStyle(color: Colors.white),
           bodyLarge: TextStyle(color: Colors.white),
-          
         ),
         useMaterial3: true,
       ),
-      home:  ScreenMainPage(),
+      home: ScreenMainPage(),
     );
   }
 }
-

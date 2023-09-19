@@ -1,7 +1,9 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
+import 'package:netflix/application/south_indians/south_indian.dart';
 
-import 'south_indian.dart';
+
+
 
 late South data;
 

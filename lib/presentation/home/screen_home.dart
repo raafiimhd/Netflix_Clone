@@ -32,7 +32,9 @@ class ScreenHome extends StatelessWidget {
               }
               return true;
             },
+            
             child: Stack(
+              
               children: [
                 ListView(
                   physics: const AlwaysScrollableScrollPhysics(),
@@ -48,11 +50,14 @@ class ScreenHome extends StatelessWidget {
                     const NumberTitleCard(),
                     kHeight,
                     MainTitleCard(title: 'Tense Dramas', movies: tensedrama),
+                    
                     kHeight,
                     MainTitleCard(
                         title: 'South Indian Cinema', movies: southindian),
                   ],
+                  
                 ),
+                
                 if (scrollNotifier.value == true)
                   AnimatedContainer(
                     duration: const Duration(milliseconds: 3000),
@@ -125,12 +130,18 @@ class NumberTitleCard extends StatelessWidget {
           title: 'Top 10 TV Shows In India Today',
         ),
         kHeight,
+      
         LimitedBox(
           maxHeight: 200,
+        
           child: ListView(
+            
             scrollDirection: Axis.horizontal,
+            
             children: List.generate(
+              
               topratedmovies.length - 10,
+              
               (index) => NumberCard(
                 index: index,
               ),

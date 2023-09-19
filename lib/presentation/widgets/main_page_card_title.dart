@@ -5,7 +5,9 @@ import 'package:netflix/presentation/widgets/main_tiltle.dart';
 
 
 class MainTitleCard extends StatelessWidget {
-  const MainTitleCard({super.key, required this.title, required this.movies});
+  const MainTitleCard({super.key,
+   required this.title, 
+  required this.movies});
 
   final String title;
   final List movies;

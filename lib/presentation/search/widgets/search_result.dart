@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:netflix/application/movie_data/movie_data.dart';
 import 'package:netflix/main.dart';
 import 'package:netflix/presentation/search/widgets/search_widget.dart';
 
-import '../../../application/movie_data/movie_data.dart';
 
 
 const imageUrl =

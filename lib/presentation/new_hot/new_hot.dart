@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:netflix/application/movie_data/api_functions.dart';
 import 'package:netflix/application/upcoming_movies/api_functions.dart';
 import 'package:netflix/core/colors/colors.dart';
 import 'package:netflix/core/constant.dart';
@@ -6,7 +7,8 @@ import 'package:netflix/main.dart';
 import 'package:netflix/presentation/new_hot/widgets/coming_soon_widgets.dart';
 import 'package:netflix/presentation/new_hot/widgets/everyone_watch.dart';
 
-import '../../application/movie_data/api_functions.dart';
+
+
 
 
 class ScreenNewAndHot extends StatelessWidget {

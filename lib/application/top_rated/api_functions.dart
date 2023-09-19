@@ -3,6 +3,9 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:netflix/application/top_rated/top_rated.dart';
 
+
+
+
 late TopRated data;
 
 Future<List<TopRatedTVShows>> getTopRatedMovies() async {

@@ -8,7 +8,6 @@ late Movie data;
 Future<List<MovieData>> getMovie() async {
   final response = await http.get(Uri.parse(
       'https://api.themoviedb.org/3/trending/movie/day?api_key=9ecbe884400974d607deae876cd60161'));
-
   if (response.statusCode == 200) {
     final bodyJson = jsonDecode(response.body);
     data = Movie.fromJson(bodyJson);

@@ -46,20 +46,20 @@ class CommingSoonWidget extends StatelessWidget {
             children: [
                VideoWidget(image: 'https://image.tmdb.org/t/p/w500$posterurl'),
               kHeight,
-              Row(
+            const  Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Flexible(
                     child: Text(
                       'TALL GIRL 2',
-                      style: const TextStyle(
+                      style:  TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
                       ),
                       maxLines: 2,
                     ),
                   ),
-                  const Row(
+                   Row(
                     children: [
                       CoustomButtonWidget(
                         icon: FontAwesomeIcons.bell,
@@ -102,42 +102,42 @@ class CommingSoonWidget extends StatelessWidget {
                   )
                 ],
               ),
-              Text(
+             const Text(
                 'name',
-                style: const TextStyle(
+                style:  TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
                 ),
               ),
               kHeight,
-              Flexible(
+             const Flexible(
                 child: Text(
                   'description',
-                  style: const TextStyle(
+                  style:  TextStyle(
                     color: kGerayColor,
                   ),
                 ),
               ),
               kHight20,
-              const Row(
+               const Row(
                 children: [
-                  Text(
+                 Text(
                     'intimate',
                     style: kNewAndHot,
                   ),
                   kwidth6,
-                  Icon(
+                Icon(
                     Icons.circle,
                     color: Colors.white,
                     size: 5,
                   ),
                   kwidth6,
-                  Text(
+                Text(
                     'Hearful',
                     style: kNewAndHot,
                   ),
                   kwidth6,
-                  Icon(
+                 Icon(
                     Icons.circle,
                     color: Colors.white,
                     size: 5,
@@ -164,9 +164,8 @@ class CommingSoonWidget extends StatelessWidget {
                     color: Colors.white,
                     size: 5,
                   ),
-                  kwidth6,
                   Text(
-                    'Feel-Good',
+                    'Feel ',
                     style: kNewAndHot,
                   ),
                 ],

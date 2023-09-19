@@ -10,6 +10,9 @@ const kHight20 = SizedBox(height: 20);
 const kHight30 = SizedBox(height: 30);
 const kwidth6 = SizedBox(width: 6);
 final kRadius20 = BorderRadius.circular(20);
+const kwidth3 = SizedBox(
+  width: 3,
+);
 
 final kRadius30 = BorderRadius.circular(30);
 const mianImage =
@@ -26,7 +29,6 @@ const newAndHotImage2 =
 
 const netflixLogo =
     'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9RAq1pMgiuEqnwR3uXPsnno3nitbJt9vdkw&usqp=CAU';
-
 
 const TextStyle kHomeTitleText =
     TextStyle(fontSize: 20, fontWeight: FontWeight.bold);
